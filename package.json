@@ -1,8 +1,8 @@
 {
-  "name": "new-timber",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@libmask/mask",
+  "version": "0.0.1",
+  "description": "Expressive JavaScript Framework",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
