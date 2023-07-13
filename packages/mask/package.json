@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "tsup": "^7.1.0",
+    "typescript": "^4.5.2"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "name": "@libmask/mask",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "clean": "rm -rf dist",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint \"**/*.ts*\""
+  },
+  "types": "./dist/index.d.ts",
+  "version": "0.0.1"
+}

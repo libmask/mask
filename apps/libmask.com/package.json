@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@libmask/mask": "workspace:*",
+    "autoprefixer": "^10.4.14",
+    "lucide": "^0.259.0",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.4.3"
+  },
+  "devDependencies": {
+    "eslint-config-mask": "workspace:*",
+    "tsconfig": "workspace:*"
+  },
+  "name": "libmask.com",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "lint": "eslint \"**/*.ts*\""
+  },
+  "version": "0.0.1"
+}

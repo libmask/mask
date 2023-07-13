@@ -1,4 +1,4 @@
-import { a, div, i, p } from 'libmask/mask'
+import { a, div, i } from '@libmask/mask'
 import { Logo } from './logo'
 
 const Header = () =>

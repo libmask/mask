@@ -1,4 +1,4 @@
-import { heading } from 'libmask/mask'
+import { heading } from '@libmask/mask'
 
 export const Logo = () =>
   heading()

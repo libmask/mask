@@ -1,4 +1,4 @@
-import { Component, a, button, code, div, heading, p } from 'libmask/mask'
+import { Component, a, button, code, div, heading, p } from '@libmask/mask'
 import Header from './header'
 
 const App: Component = () => [

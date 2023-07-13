@@ -1,2 +1,7 @@
 node_modules/
 dist/
+.turbo/
+
+.npmrc
+
+pnpm-lock.yaml

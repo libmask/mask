@@ -1,4 +1,7 @@
-export type Component<T = unknown, R extends Unit = any> = (properties?: T) => R
+export type Component<T = unknown, R extends Unit = never> = (
+  properties?: T
+) => R
+
 export type Unit =
   | Mask
   | Component<unknown>
@@ -7,7 +10,7 @@ export type Unit =
   | DocumentFragment
 
 export class Mask {
-  private node: Node
+  private node?: Node
 
   constructor(unit: Unit) {
     if (unit instanceof Mask) this.node = unit.element
@@ -15,6 +18,7 @@ export class Mask {
   }
 
   mountAtDocumentBody() {
+    if (!this.node) return
     document.body.appendChild(this.node)
   }
 
@@ -22,8 +26,8 @@ export class Mask {
     return this.node as HTMLElement
   }
 
-  text(content: string) {
-    this.element.textContent = content
+  text(content?: string) {
+    this.element.textContent = content ?? ''
     return this
   }
 
@@ -56,8 +60,8 @@ export class Mask {
     return this
   }
 
-  attribute(key: string, value: string) {
-    this.element.setAttribute(key, value)
+  attribute(key: string, value?: string) {
+    this.element.setAttribute(key, value ?? '')
     return this
   }
 }
