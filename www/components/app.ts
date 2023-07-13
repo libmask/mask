@@ -3,7 +3,7 @@ import Header from './header'
 
 const App: Component = () => [
   Header,
-  div('container mx-auto').append(
+  div('container px-8 mx-auto').append(
     div('w-8/12 mx-auto text-center py-32').append(
       heading('Mask').class(
         'text-9xl font-black bg-gradient-to-br from-cyan-400 to-teal-400 bg-clip-text text-transparent inline-block tracking-tighter uppercase'
